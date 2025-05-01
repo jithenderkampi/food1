@@ -1,0 +1,236 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/Background2.png);
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(249, 247, 245);
+    padding: 10px 30px 0px 20px;
+}
+.logo{
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+}
+.logo:hover{
+    color: orange;
+    cursor: pointer;
+}
+.link{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+.link li{
+    text-decoration: none;
+    font-size: 18px;
+}
+.link li:hover{
+    font-size: 20px;
+    text-decoration: underline;
+    color: orange;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.icons i{
+    font-size: 20px;
+}
+.icons i:hover{
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    margin-top: 50px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 140px;
+}
+.left1{
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+}
+.left2{
+    font-size: 90px;
+    color: white;
+}
+.left3{
+    font-size: 30px;
+    font-style: italic;
+    color: orange;
+    margin-bottom: 15px;
+}
+.left4{
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+}
+.left4:hover{
+    cursor: pointer;
+    color: orange;
+}
+#right{
+    background-image: url(images/food.png);
+    width: 450px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+.right{
+    border: 2px solid white;
+    border-radius: 250px;
+}
+.items{
+    display: flex;
+    gap: 40px;
+    margin-left: 90px;
+    margin-top: -20px;
+}
+#item1,#item2,#item3,#item4{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+#item1{
+    background-image: url(images/food1.png);
+    background-size: cover;
+}
+#item2{
+    background-image: url(images/food2.png);
+    background-size: cover;
+}
+#item3{
+    background-image: url(images/food3.png);
+    background-size: cover;
+}
+#item4{
+    background-image: url(images/food4.png);
+    background-size: cover;
+}
+
+
+
+/* Responsive Design */
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .link {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .icons {
+        gap: 15px;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .left {
+        padding-left: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left1,
+    .left3 {
+        font-size: 20px;
+    }
+
+    .left2 {
+        font-size: 40px;
+    }
+
+    .left4 {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #right {
+        width: 250px;
+        height: 250px;
+    }
+
+    .items {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    #item1, #item2, #item3, #item4 {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    .left {
+        padding-left: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left2 {
+        font-size: 60px;
+    }
+
+    #right {
+        width: 350px;
+        height: 350px;
+    }
+
+    .items {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 10px;
+        gap: 25px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
